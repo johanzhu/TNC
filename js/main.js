@@ -133,6 +133,37 @@ firstPageAnimate();
  
     jQuery(window).bind('scrollstop', function(e){
         $('.navBar').stop(true).slideDown(1000);
+        var ST = $(window).scrollTop();
+ 	      if(ST>=0&&ST<=400){
+ 	      	$('html,body').animate({scrollTop:0},500)
+ 	      }else if(ST>=800&&ST<=1700){
+ 	      	$('html,body').animate({scrollTop:1200},500)
+ 	      }else if(ST>=2000&&ST<=2500){
+ 	      	 $('html,body').animate({scrollTop:2300},500)
+ 	      } else if(ST>=2600&&ST<=3000){
+ 	      	$('html,body').animate({scrollTop:2700},500)
+ 	      } else if(ST>=5916&&ST<=6716){
+ 	      	$('html,body').animate({scrollTop:6316},500)
+ 	      } else if(ST>=7216&&ST<=7916){
+ 	      	$('html,body').animate({scrollTop:7516},500)
+ 	      } else if(ST>=8416&&ST<=9116){
+ 	      	$('html,body').animate({scrollTop:8716},500)
+ 	      } else if(ST>=9616&&ST<=10316){
+ 	      	$('html,body').animate({scrollTop:9916},500)
+ 	      } else if(ST>=10716&&ST<=11536){
+ 	      	$('html,body').animate({scrollTop:11136},500)
+ 	      } else if(ST>=11936&&ST<=12427){
+ 	      	$('html,body').animate({scrollTop:12327},500)
+ 	      }
+ 	      
+ 	      
+ 	      
+ 	      
+ 	      
+ 	      
+ 	      
+ 	      
+ 	      
     });
 })();
 var musicClick = 1;
@@ -202,41 +233,91 @@ $('.yatai').hover(
 	}
 )
 /*地图特效结束*/
+$('.Icon0').hover(
+	function(){
+         $('.Icon0 .current').stop(true).slideDown(300)	
+	}
+	,
+	function(){
+         $('.Icon0 .current').stop(true).slideUp(300);
+         var margin = $('.newsBox').css("margin-left");
+         if(margin == "0px"){
+         	$('.Icon1 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideUp(300);
+         	$('.Icon0 .current').stop(true).slideDown(300);
+         	console.log('a');
+         }else if(margin == "-1000px"){
+         	$('.Icon0 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideUp(300);
+         	$('.Icon1 .current').stop(true).slideDown(300)
+         }else if(margin == "-2000px"){
+         	$('.Icon1 .current').stop(true).slideUp(300);
+         	$('.Icon0 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideDown(300)
+         }
+	}
+)
+$('.Icon1').hover(
+	function(){
+         $('.Icon1 .current').stop(true).slideDown(300)	
+	}
+	,
+	function(){
+         $('.Icon1 .current').stop(true).slideUp(300)
+          var margin = $('.newsBox').css("margin-left");
+         if(margin == "0px"){
+         	$('.Icon1 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideUp(300);
+         	$('.Icon0 .current').stop(true).slideDown(300);
+         	console.log('a');
+         }else if(margin == "-1000px"){
+         	$('.Icon0 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideUp(300);
+         	$('.Icon1 .current').stop(true).slideDown(300)
+         }else if(margin == "-2000px"){
+         	$('.Icon1 .current').stop(true).slideUp(300);
+         	$('.Icon0 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideDown(300)
+         }
+         
+	}
+)
+$('.Icon2').hover(
+	function(){
+         $('.Icon2 .current').stop(true).slideDown(300)	
+	}
+	,
+	function(){
+         $('.Icon2 .current').stop(true).slideUp(300)
+          var margin = $('.newsBox').css("margin-left");
+         if(margin == "0px"){
+         	$('.Icon1 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideUp(300);
+         	$('.Icon0 .current').stop(true).slideDown(300);
+         	console.log('a');
+         }else if(margin == "-1000px"){
+         	$('.Icon0 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideUp(300);
+         	$('.Icon1 .current').stop(true).slideDown(300)
+         }else if(margin == "-2000px"){
+         	$('.Icon1 .current').stop(true).slideUp(300);
+         	$('.Icon0 .current').stop(true).slideUp(300);
+         	$('.Icon2 .current').stop(true).slideDown(300)
+         }
+	}
+)
+$('.Icon0').click(function(){
+	 $('.newsBox').css({"margin-left":"0"})
+})
+$('.Icon1').click(function(){
+	 $('.Icon1 .current').stop(true).slideDown(300)
+	 $('.newsBox').css({"margin-left":"-1000px"})
+})
+$('.Icon2').click(function(){
+	 $('.Icon2 .current').stop(true).slideDown(300)
+	 $('.newsBox').css({"margin-left":"-2000px"})
+})
 
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -279,9 +360,7 @@ window.onscroll = function(){
     		var top = ST - 3550;
     		$('.greenLine').css({"height":top+'px'})
     	}
-    	
 }
-
 
 
 

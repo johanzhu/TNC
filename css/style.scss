@@ -131,7 +131,7 @@
         display: none;
         position: absolute;
         z-index: 5;
-        left: 10%;
+        left: 120px;
         width: 258px;
         height: 88px;
         background: url(../img/logo_1.jpg);
@@ -1709,6 +1709,111 @@
 }
 /*10end*/
 /*11*/
+.eleventhPage{
+    width: 100%;
+    height: 100%;
+    li{
+        float: left;
+    }
+    .img{
+        width: 234px;
+        height: 140px;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .blank{
+        width: 100%;
+        height: 158px;
+        position: relative;
+    }
+    .newsBlock{
+        width: 100%;
+        height:70%;
+        background-color: #D4D8DB;
+        .newsBook{
+            width: 1000px;
+            height: 203px;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            top: 20%;
+            ul{
+                width: 1000px;
+                height: 203px;
+            }
+            li{
+                width: 234px;
+                height: 203px;
+                padding-right: 16px;
+            }
+            p{
+                font-size: 15px;
+                color: #666;
+            }
+            .date{
+                color: white;
+                font-size: 24px;
+                font-family: "arial black";
+                text-align: right;
+                border-bottom: 3px solid white;
+            }
+            .newsBox{
+                width: 3048px;
+                height: 203px;
+                .page{
+                    width: 1000px;
+                    height: 203px;
+                }
+            }
+            
+        }
+    }
+    .newsBar{
+        width: 100%;
+        height: 30%;
+        background: url(../img/FOOT1.jpg) repeat;
+        border-top: 8px solid #8A4E06;
+        ul{
+            width: 558px;
+            height: 116px;
+            margin: 0 auto;
+            
+        }
+        li{
+            width: 86px;
+            height: 116px;
+            margin: 50px 50px 0;
+            position: relative;
+            cursor: pointer;
+            .current{
+                width: 60px;
+                height: 32px;
+                position: absolute;
+                top: -58px;
+                left: 50%;
+                margin-left: -30px;
+                background: url(../img/triangle.png) no-repeat;
+                display: none;
+            }
+        }
+        .Icon0{
+            background: url(../img/link0.png) no-repeat;
+        }
+        .Icon1{
+            background: url(../img/link1.png) no-repeat;
+        }
+        .Icon2{
+            background: url(../img/link2.png) no-repeat;
+        }
+    }
+    
+    
+    
+}
 /*11end*/
 
 

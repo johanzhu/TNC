@@ -5,26 +5,64 @@
 .fr {
   float: right; }
 
+@-webkit-keyframes cicleHide {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  to {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); } }
+
 @keyframes cicleHide {
   from {
-    transform: scale(1, 1); }
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
   to {
-    transform: scale(0, 0); } }
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); } }
+@-webkit-keyframes cicleShow {
+  from {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
 @keyframes cicleShow {
   from {
-    transform: scale(0, 0); }
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0); }
   to {
-    transform: scale(1, 1); } }
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+@-webkit-keyframes show {
+  from {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg); }
+  to {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0); } }
 @keyframes show {
   from {
-    transform: rotateX(90deg); }
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg); }
   to {
-    transform: rotateX(0); } }
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0); } }
+@-webkit-keyframes slideLeft {
+  from {
+    padding-left: 0; }
+  to {
+    padding-left: 70px; } }
 @keyframes slideLeft {
   from {
     padding-left: 0; }
   to {
     padding-left: 70px; } }
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @keyframes opacity {
   from {
     opacity: 0; }
@@ -80,7 +118,7 @@
   display: none;
   position: absolute;
   z-index: 5;
-  left: 10%;
+  left: 120px;
   width: 258px;
   height: 88px;
   background: url(../img/logo_1.jpg); }
@@ -121,7 +159,8 @@
     top: 88px;
     float: none;
     font-size: 13px;
-    transform-style: preserve-3d; }
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
     .navBar .navContent .select li {
       width: 187px;
       height: 36px;
@@ -159,20 +198,32 @@
       background-color: #00713D;
       color: #FFF; }
     .navBar .knowTNC .select li:nth-child(1) {
-      transform-origin: 50% 0;
-      animation: show .2s .2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .2s linear forwards;
+              animation: show .2s .2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .knowTNC .select li:nth-child(2) {
-      transform-origin: 50% 0;
-      animation: show .2s .4s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .4s linear forwards;
+              animation: show .2s .4s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .knowTNC .select li:nth-child(3) {
-      transform-origin: 50% 0;
-      animation: show .2s .6s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .6s linear forwards;
+              animation: show .2s .6s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
 .navBar .protectProject {
   background-image: url(../img/nav.png);
   background-repeat: no-repeat;
@@ -187,35 +238,59 @@
       background-color: #339933;
       color: #FFF; }
     .navBar .protectProject .select li:nth-child(1) {
-      transform-origin: 50% 0;
-      animation: show .2s .2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .2s linear forwards;
+              animation: show .2s .2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .protectProject .select li:nth-child(2) {
-      transform-origin: 50% 0;
-      animation: show .2s .4s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .4s linear forwards;
+              animation: show .2s .4s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .protectProject .select li:nth-child(3) {
-      transform-origin: 50% 0;
-      animation: show .2s .6s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .6s linear forwards;
+              animation: show .2s .6s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .protectProject .select li:nth-child(4) {
-      transform-origin: 50% 0;
-      animation: show .2s .8s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .8s linear forwards;
+              animation: show .2s .8s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .protectProject .select li:nth-child(5) {
-      transform-origin: 50% 0;
-      animation: show .2s 1s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s 1s linear forwards;
+              animation: show .2s 1s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .protectProject .select li:nth-child(6) {
-      transform-origin: 50% 0;
-      animation: show .2s 1.2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s 1.2s linear forwards;
+              animation: show .2s 1.2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
 .navBar .protectScience {
   background-image: url(../img/nav.png);
   background-repeat: no-repeat;
@@ -230,20 +305,32 @@
       background-color: #0099FF;
       color: #FFF; }
     .navBar .protectScience .select li:nth-child(1) {
-      transform-origin: 50% 0;
-      animation: show .2s .2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .2s linear forwards;
+              animation: show .2s .2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .protectScience .select li:nth-child(2) {
-      transform-origin: 50% 0;
-      animation: show .2s .4s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .4s linear forwards;
+              animation: show .2s .4s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .protectScience .select li:nth-child(3) {
-      transform-origin: 50% 0;
-      animation: show .2s .6s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .6s linear forwards;
+              animation: show .2s .6s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
 .navBar .news {
   background-image: url(../img/nav.png);
   background-repeat: no-repeat;
@@ -258,20 +345,32 @@
       background-color: #D77308;
       color: #FFF; }
     .navBar .news .select li:nth-child(1) {
-      transform-origin: 50% 0;
-      animation: show .2s .2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .2s linear forwards;
+              animation: show .2s .2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .news .select li:nth-child(2) {
-      transform-origin: 50% 0;
-      animation: show .2s .4s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .4s linear forwards;
+              animation: show .2s .4s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .news .select li:nth-child(3) {
-      transform-origin: 50% 0;
-      animation: show .2s .6s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .6s linear forwards;
+              animation: show .2s .6s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
 .navBar .closeToNature {
   background-image: url(../img/nav.png);
   background-repeat: no-repeat;
@@ -286,30 +385,50 @@
       background-color: #5E8727;
       color: #FFF; }
     .navBar .closeToNature .select li:nth-child(1) {
-      transform-origin: 50% 0;
-      animation: show .2s .2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .2s linear forwards;
+              animation: show .2s .2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .closeToNature .select li:nth-child(2) {
-      transform-origin: 50% 0;
-      animation: show .2s .4s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .4s linear forwards;
+              animation: show .2s .4s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .closeToNature .select li:nth-child(3) {
-      transform-origin: 50% 0;
-      animation: show .2s .6s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .6s linear forwards;
+              animation: show .2s .6s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .closeToNature .select li:nth-child(4) {
-      transform-origin: 50% 0;
-      animation: show .2s .8s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .8s linear forwards;
+              animation: show .2s .8s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .closeToNature .select li:nth-child(5) {
-      transform-origin: 50% 0;
-      animation: show .2s 1s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s 1s linear forwards;
+              animation: show .2s 1s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
 .navBar .myTNC {
   background-image: url(../img/nav.png);
   background-repeat: no-repeat;
@@ -324,30 +443,50 @@
       background-color: #233E5C;
       color: #FFF; }
     .navBar .myTNC .select li:nth-child(1) {
-      transform-origin: 50% 0;
-      animation: show .2s .2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .2s linear forwards;
+              animation: show .2s .2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .myTNC .select li:nth-child(2) {
-      transform-origin: 50% 0;
-      animation: show .2s .4s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .4s linear forwards;
+              animation: show .2s .4s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .myTNC .select li:nth-child(3) {
-      transform-origin: 50% 0;
-      animation: show .2s .6s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .6s linear forwards;
+              animation: show .2s .6s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .myTNC .select li:nth-child(4) {
-      transform-origin: 50% 0;
-      animation: show .2s .8s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .8s linear forwards;
+              animation: show .2s .8s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .myTNC .select li:nth-child(5) {
-      transform-origin: 50% 0;
-      animation: show .2s 1s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s 1s linear forwards;
+              animation: show .2s 1s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
 .navBar .downLoad {
   background-image: url(../img/nav.png);
   background-repeat: no-repeat;
@@ -359,20 +498,32 @@
   .navBar .downLoad .select {
     color: #00713D; }
     .navBar .downLoad .select li:nth-child(1) {
-      transform-origin: 50% 0;
-      animation: show .2s .2s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .2s linear forwards;
+              animation: show .2s .2s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .downLoad .select li:nth-child(2) {
-      transform-origin: 50% 0;
-      animation: show .2s .4s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .4s linear forwards;
+              animation: show .2s .4s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
     .navBar .downLoad .select li:nth-child(3) {
-      transform-origin: 50% 0;
-      animation: show .2s .6s linear forwards;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+      -webkit-animation: show .2s .6s linear forwards;
+              animation: show .2s .6s linear forwards;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      transform: rotateX(90deg); }
+      -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg); }
 .navBar .tree {
   background-image: url(../img/nav.png);
   background-repeat: no-repeat;
@@ -496,7 +647,8 @@
     top: 43%;
     margin: 0 auto; }
     .secondPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .secondPage .des .desIcon {
@@ -576,7 +728,8 @@
     padding-top: 14%;
     margin: 0 auto; }
     .thirdPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .thirdPage .des .desIcon {
@@ -634,7 +787,8 @@
       opacity: 0;
       cursor: pointer; }
       .thirdPage .map .beimei:hover {
-        animation: opacity .5s linear forwards; }
+        -webkit-animation: opacity .5s linear forwards;
+                animation: opacity .5s linear forwards; }
     .thirdPage .map .beimeiShow {
       width: 316px;
       height: 274px;
@@ -643,7 +797,9 @@
       left: 0;
       top: 7px;
       opacity: 1;
-      transform-origin: 50% 50%; }
+      -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+              transform-origin: 50% 50%; }
       .thirdPage .map .beimeiShow .beimeiCicle1 {
         width: 120px;
         height: 120px;
@@ -683,7 +839,8 @@
       opacity: 0;
       cursor: pointer; }
       .thirdPage .map .nanmei:hover {
-        animation: opacity .5s linear forwards; }
+        -webkit-animation: opacity .5s linear forwards;
+                animation: opacity .5s linear forwards; }
     .thirdPage .map .nanmeiShow {
       width: 157px;
       height: 227px;
@@ -692,7 +849,9 @@
       left: 200px;
       top: 258px;
       opacity: 1;
-      transform-origin: 50% 50%; }
+      -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+              transform-origin: 50% 50%; }
       .thirdPage .map .nanmeiShow .nanmeiCicle1 {
         width: 100px;
         height: 100px;
@@ -718,7 +877,8 @@
       opacity: 0;
       cursor: pointer; }
       .thirdPage .map .ouzhou:hover {
-        animation: opacity .5s linear forwards; }
+        -webkit-animation: opacity .5s linear forwards;
+                animation: opacity .5s linear forwards; }
     .thirdPage .map .ouzhouShow {
       width: 150px;
       height: 209px;
@@ -727,7 +887,9 @@
       left: 450px;
       top: 5px;
       opacity: 1;
-      transform-origin: 50% 50%; }
+      -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+              transform-origin: 50% 50%; }
       .thirdPage .map .ouzhouShow .ouzhouCicle1 {
         width: 100px;
         height: 100px;
@@ -753,7 +915,8 @@
       opacity: 0;
       cursor: pointer; }
       .thirdPage .map .feizhou:hover {
-        animation: opacity .5s linear forwards; }
+        -webkit-animation: opacity .5s linear forwards;
+                animation: opacity .5s linear forwards; }
     .thirdPage .map .feizhouShow {
       width: 186px;
       height: 207px;
@@ -762,7 +925,9 @@
       left: 430px;
       top: 190px;
       opacity: 1;
-      transform-origin: 50% 50%; }
+      -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+              transform-origin: 50% 50%; }
       .thirdPage .map .feizhouShow .feizhouCicle1 {
         width: 100px;
         height: 100px;
@@ -788,7 +953,8 @@
       opacity: 0;
       cursor: pointer; }
       .thirdPage .map .yatai:hover {
-        animation: opacity .5s linear forwards; }
+        -webkit-animation: opacity .5s linear forwards;
+                animation: opacity .5s linear forwards; }
     .thirdPage .map .yataiShow {
       width: 395px;
       height: 352px;
@@ -797,7 +963,9 @@
       left: 570px;
       top: 125px;
       opacity: 1;
-      transform-origin: 50% 50%; }
+      -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+              transform-origin: 50% 50%; }
       .thirdPage .map .yataiShow .yataiCicle1 {
         width: 100px;
         height: 100px;
@@ -890,7 +1058,8 @@
     padding-top: 230px;
     margin: 0 auto; }
     .fourthPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .fourthPage .des .desIcon {
@@ -1136,7 +1305,8 @@
     top: 43%;
     margin: 0 auto; }
     .fifthPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .fifthPage .des .desIcon {
@@ -1230,7 +1400,8 @@
     top: 43%;
     margin: 0 auto; }
     .sixthPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .sixthPage .des .desIcon {
@@ -1320,7 +1491,8 @@
     top: 43%;
     margin: 0 auto; }
     .seventhPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .seventhPage .des .desIcon {
@@ -1400,7 +1572,8 @@
     top: 43%;
     margin: 0 auto; }
     .eighthPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .eighthPage .des .desIcon {
@@ -1480,7 +1653,8 @@
     top: 43%;
     margin: 0 auto; }
     .ninethPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .ninethPage .des .desIcon {
@@ -1560,7 +1734,8 @@
     top: 43%;
     margin: 0 auto; }
     .tenthPage .des :hover .knowMore {
-      animation: slideLeft .2s linear forwards;
+      -webkit-animation: slideLeft .2s linear forwards;
+              animation: slideLeft .2s linear forwards;
       border-radius: 0 !important;
       cursor: pointer; }
     .tenthPage .des .desIcon {
@@ -1628,6 +1803,87 @@
 
 /*10end*/
 /*11*/
+.eleventhPage {
+  width: 100%;
+  height: 100%; }
+  .eleventhPage li {
+    float: left; }
+  .eleventhPage .img {
+    width: 234px;
+    height: 140px;
+    overflow: hidden; }
+    .eleventhPage .img img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  .eleventhPage .blank {
+    width: 100%;
+    height: 158px;
+    position: relative; }
+  .eleventhPage .newsBlock {
+    width: 100%;
+    height: 70%;
+    background-color: #D4D8DB; }
+    .eleventhPage .newsBlock .newsBook {
+      width: 1000px;
+      height: 203px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+      top: 20%; }
+      .eleventhPage .newsBlock .newsBook ul {
+        width: 1000px;
+        height: 203px; }
+      .eleventhPage .newsBlock .newsBook li {
+        width: 234px;
+        height: 203px;
+        padding-right: 16px; }
+      .eleventhPage .newsBlock .newsBook p {
+        font-size: 15px;
+        color: #666; }
+      .eleventhPage .newsBlock .newsBook .date {
+        color: white;
+        font-size: 24px;
+        font-family: "arial black";
+        text-align: right;
+        border-bottom: 3px solid white; }
+      .eleventhPage .newsBlock .newsBook .newsBox {
+        width: 3048px;
+        height: 203px; }
+        .eleventhPage .newsBlock .newsBook .newsBox .page {
+          width: 1000px;
+          height: 203px; }
+  .eleventhPage .newsBar {
+    width: 100%;
+    height: 30%;
+    background: url(../img/FOOT1.jpg) repeat;
+    border-top: 8px solid #8A4E06; }
+    .eleventhPage .newsBar ul {
+      width: 558px;
+      height: 116px;
+      margin: 0 auto; }
+    .eleventhPage .newsBar li {
+      width: 86px;
+      height: 116px;
+      margin: 50px 50px 0;
+      position: relative;
+      cursor: pointer; }
+      .eleventhPage .newsBar li .current {
+        width: 60px;
+        height: 32px;
+        position: absolute;
+        top: -58px;
+        left: 50%;
+        margin-left: -30px;
+        background: url(../img/triangle.png) no-repeat;
+        display: none; }
+    .eleventhPage .newsBar .Icon0 {
+      background: url(../img/link0.png) no-repeat; }
+    .eleventhPage .newsBar .Icon1 {
+      background: url(../img/link1.png) no-repeat; }
+    .eleventhPage .newsBar .Icon2 {
+      background: url(../img/link2.png) no-repeat; }
+
 /*11end*/
 
 /*# sourceMappingURL=style.css.map */
