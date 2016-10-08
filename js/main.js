@@ -1,4 +1,5 @@
 $(function(){
+	var ST = $(window).scrollTop();
 	/*Nav*/
 	$('.knowTNC').hover(
 		function(){
@@ -141,7 +142,9 @@ firstPageAnimate();
  	      }else if(ST>=2000&&ST<=2500){
  	      	 $('html,body').animate({scrollTop:2300},500)
  	      } else if(ST>=2600&&ST<=3000){
- 	      	$('html,body').animate({scrollTop:2700},500)
+ 	      	$('html,body').animate({scrollTop:2600},500)
+ 	      } else if(ST>=3300&&ST<=3800){
+ 	      	$('html,body').animate({scrollTop:3800},500)
  	      } else if(ST>=5916&&ST<=6716){
  	      	$('html,body').animate({scrollTop:6316},500)
  	      } else if(ST>=7216&&ST<=7916){
@@ -152,10 +155,74 @@ firstPageAnimate();
  	      	$('html,body').animate({scrollTop:9916},500)
  	      } else if(ST>=10716&&ST<=11536){
  	      	$('html,body').animate({scrollTop:11136},500)
- 	      } else if(ST>=11936&&ST<=12427){
+ 	      } else if(ST>=11936&&ST<=12727){
  	      	$('html,body').animate({scrollTop:12327},500)
+ 	      }else if(ST>=13213){
+ 	      	$('html,body').animate({scrollTop:13413},500)
  	      }
- 	      
+ 	      	
+ 	      if(ST==1200||ST==2300||ST==2600||ST==3800){
+ 	      	 $('.protectProject .navContent').css({"display":"none","opacity":"1"})
+ 	      	  $('.protectScience .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.knowTNC .navContent').css({"display":"block","opacity":"1"})
+ 	      	 $('.news .navContent').css({"display":"none","opacity":"1"})
+ 	      }else if(ST==6316||ST==7516||ST==8716){
+ 	      	 $('.protectScience .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.knowTNC .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.protectProject .navContent').css({"display":"block","opacity":"1"})
+ 	      	 $('.news .navContent').css({"display":"none","opacity":"1"})
+ 	      }else if(ST==9916||ST==11136||ST==12327){
+ 	      	$('.knowTNC .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.protectProject .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.protectScience .navContent').css({"display":"block","opacity":"1"})
+ 	      	 $('.news .navContent').css({"display":"none","opacity":"1"})
+ 	      }else if(ST==13413){
+ 	      	 $('.knowTNC .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.protectProject .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.protectScience .navContent').css({"display":"none","opacity":"1"})
+ 	      	 $('.news .navContent').css({"display":"block","opacity":"1"})
+ 	      }
+ 	      if(ST==1200){
+ 	      	 $('.knowTNC .select li').eq(0).css({"background-color":"#00713D","color":"white"})
+ 	      	 $('.knowTNC .select li').eq(1).css({"background-color":"#FFF","color":"#00713D"})
+ 	      	 $('.knowTNC .select li').eq(2).css({"background-color":"#FFF","color":"#00713D"})
+ 	      }else if(ST==2300){
+ 	      	 $('.knowTNC .select li').eq(1).css({"background-color":"#00713D","color":"white"})
+ 	      	  $('.knowTNC .select li').eq(0).css({"background-color":"#FFF","color":"#00713D"})
+ 	      	 $('.knowTNC .select li').eq(2).css({"background-color":"#FFF","color":"#00713D"})
+ 	      }else if(ST==2600){
+ 	      	 $('.knowTNC .select li').eq(1).css({"background-color":"#00713D","color":"white"})
+ 	      	 $('.knowTNC .select li').eq(0).css({"background-color":"#FFF","color":"#00713D"})
+ 	      	 $('.knowTNC .select li').eq(2).css({"background-color":"#FFF","color":"#00713D"})
+ 	      }else if(ST==3800){
+ 	      	 $('.knowTNC .select li').eq(2).css({"background-color":"#00713D","color":"white"})
+ 	      	 $('.knowTNC .select li').eq(0).css({"background-color":"#FFF","color":"#00713D"})
+ 	      	 $('.knowTNC .select li').eq(1).css({"background-color":"#FFF","color":"#00713D"})
+ 	      }else if(ST==6316){
+ 	      	 $('.protectProject .select li').eq(0).css({"background-color":"#339933","color":"white"})
+ 	      	 $('.protectProject .select li').eq(1).css({"background-color":"#FFF","color":"#339933"})
+ 	      	 $('.protectProject .select li').eq(2).css({"background-color":"#FFF","color":"#339933"})
+ 	      }else if(ST==7516){
+ 	      	 $('.protectProject .select li').eq(1).css({"background-color":"#339933","color":"white"})
+ 	      	 $('.protectProject .select li').eq(0).css({"background-color":"#FFF","color":"#339933"})
+ 	      	 $('.protectProject .select li').eq(2).css({"background-color":"#FFF","color":"#339933"})
+ 	      }else if(ST==8716){
+ 	      	 $('.protectProject .select li').eq(2).css({"background-color":"#339933","color":"white"})
+ 	      	 $('.protectProject .select li').eq(1).css({"background-color":"#FFF","color":"#339933"})
+ 	      	 $('.protectProject .select li').eq(0).css({"background-color":"#FFF","color":"#339933"})
+ 	      }else if(ST==9916){
+ 	      	 $('.protectScience .select li').eq(0).css({"background-color":"#0099FF","color":"white"})
+ 	      	 $('.protectScience .select li').eq(1).css({"background-color":"#FFF","color":"#0099FF"})
+ 	      	 $('.protectScience .select li').eq(2).css({"background-color":"#FFF","color":"#0099FF"})
+ 	      }else if(ST==11136){
+ 	      	 $('.protectScience .select li').eq(1).css({"background-color":"#0099FF","color":"white"})
+ 	      	 $('.protectScience .select li').eq(0).css({"background-color":"#FFF","color":"#0099FF"})
+ 	      	 $('.protectScience .select li').eq(2).css({"background-color":"#FFF","color":"#0099FF"})
+ 	      }else if(ST==12327){
+ 	      	 $('.protectScience .select li').eq(2).css({"background-color":"#0099FF","color":"white"})
+ 	      	 $('.protectScience .select li').eq(1).css({"background-color":"#FFF","color":"#0099FF"})
+ 	      	 $('.protectScience .select li').eq(0).css({"background-color":"#FFF","color":"#0099FF"})
+ 	      }
  	      
  	      
  	      
@@ -307,23 +374,17 @@ $('.Icon2').hover(
 	}
 )
 $('.Icon0').click(function(){
-	 $('.newsBox').css({"margin-left":"0"})
+	 $('.newsBox').animate({"margin-left":"0"})
 })
 $('.Icon1').click(function(){
 	 $('.Icon1 .current').stop(true).slideDown(300)
-	 $('.newsBox').css({"margin-left":"-1000px"})
+	 $('.newsBox').animate({"margin-left":"-1000px"})
 })
 $('.Icon2').click(function(){
 	 $('.Icon2 .current').stop(true).slideDown(300)
-	 $('.newsBox').css({"margin-left":"-2000px"})
+	 $('.newsBox').animate({"margin-left":"-2000px"})
 })
 
-	
-	
-	
-	
-	
-	
 	
 })//$end
 
@@ -361,6 +422,4 @@ window.onscroll = function(){
     		$('.greenLine').css({"height":top+'px'})
     	}
 }
-
-
 
